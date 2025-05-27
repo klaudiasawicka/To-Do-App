@@ -1,2 +1,1 @@
-# To-Do-App
-Aplikacja To-Do pozwalająca dodawać, edytować i usuwać zadania, napisana za pomocą HTML, CSS i Vanilla JS
+To otworzenia projektu, niezbędne jest polecenie **npm install** (by zainstalować potrzebne paczki) i **npm run start** (by odpalić)
