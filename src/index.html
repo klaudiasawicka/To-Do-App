@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl-PL" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo - opss cz. 2</title>
+    <link rel="stylesheet" href="scss/style.scss">
+    <script src="./script.js" type="module"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="todo">
+            <div class="todo_header">
+                <h1>ToDo - opss cz.2</h1>
+            </div>
+            <div class="todo_tasks">
+                <ul class="list_group" id="task_list">
+                </ul>
+            </div>
+            <div class="todo_input">
+                <input type="text" class="form-control" id="task_content" placeholder="Podaj rzecz do zrobienia...">
+                <button type="button" class="btn btnb-success" id="add_task">
+                    <i class="bi bi-plus-circle"></i> Dodaj
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="task_item" style="display: none;">
+        <div class="task_text"> XXX </div>
+        <div class="task_status"> YYY </div>
+        <div class="task_timestamp"> ZZZ </div>
+        
+        <div class="task_controls">
+            <button type="button" class="btn btn-success change_task_status">
+                <i class="bi bi-check2"></i>
+            </button>
+            <button type="button" class="btn btn-danger remove_task">
+                <i class="bi bi-trash3"></i>
+            </button>
+            <button type="button" class="btn btn-primary edit_task">
+                <i class="bi bi-pencil"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editTaskModal" tabindex="-1" aria-labelledby="editTaskModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editTaskModalLabel">Edytuj zadanie</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <input type="text" class="form-control" id="edit_task_content">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij okno</button>
+            <button type="button" class="btn btn-primary" id="save_task_changes">Zapisz zmiany</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
